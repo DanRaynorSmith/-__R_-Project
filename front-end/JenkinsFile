@@ -1,14 +1,16 @@
 pipeline{
         agent any
         stages{
-            stage('Initial'){
+            stage('Build'){
                 steps{
-                    sh '''exit
+                    sh 'exit
                     echo ${pwd}
                     git pull origin setup-front-end
-                    su - jenkins'''
-                    echo "Pipeline successful"
+                    su - jenkins'
                 }
+             stage('Success'){
+                echo "Pipeline successful"
+             }
             }
         }
 }
