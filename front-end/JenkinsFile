@@ -9,8 +9,10 @@ pipeline{
                     su - jenkins'''
                 }
              stage('Success'){
-                echo "Pipeline successful"
-             }
+                steps{
+                       echo "Pipeline successful"
+                 }
+               }
             }
         }
 }
