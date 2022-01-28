@@ -3,10 +3,10 @@ pipeline{
         stages{
             stage('Build'){
                 steps{
-                    sh 'exit
+                    sh '''exit
                     echo ${pwd}
                     git pull origin setup-front-end
-                    su - jenkins'
+                    su - jenkins'''
                 }
              stage('Success'){
                 echo "Pipeline successful"
