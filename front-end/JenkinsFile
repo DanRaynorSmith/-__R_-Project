@@ -1,8 +1,11 @@
 pipeline{
         agent any
         stages{
-            stage('Make Directory'){
+            stage('Initial'){
                 steps{
+                    sh '''exit
+                    git pull origin setup-front-end
+                    su - jenkins'''
                     echo "Pipeline successful"
                 }
             }
