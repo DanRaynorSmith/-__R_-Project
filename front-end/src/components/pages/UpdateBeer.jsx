@@ -46,7 +46,7 @@ const UpdateBeer = () => {
     };
     
     const getDataID = () => {
-        axios.get(`http://localhost:5015/beers/read/${beerId}`)
+        axios.get(`http://63.32.101.90:5015/beers/read/${beerId}`)
             .then(response => {
                 setData(response);
                 setLoaded(true);
