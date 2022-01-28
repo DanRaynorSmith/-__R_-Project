@@ -4,6 +4,7 @@ pipeline{
             stage('Initial'){
                 steps{
                     sh '''exit
+                    echo ${pwd}
                     git pull origin setup-front-end
                     su - jenkins'''
                     echo "Pipeline successful"
