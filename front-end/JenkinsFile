@@ -8,13 +8,12 @@ pipeline{
                     git pull origin setup-front-end
                     su - jenkins'''
                     echo "Pipeline successful"
+                    }
                 }
-              }
              stage('Success'){
                 steps{
                        echo "Pipeline successful"
-                 }
+                     }
                }
-            }
         }
 }
